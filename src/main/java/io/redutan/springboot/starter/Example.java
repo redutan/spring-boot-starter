@@ -9,15 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by redutan on 15. 9. 10..
  */
 @RestController
-@EnableAutoConfiguration
 public class Example {
 
 	@RequestMapping("/")
 	String home() {
 		return "Hello World!";
-	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(Example.class, args);
 	}
 }
